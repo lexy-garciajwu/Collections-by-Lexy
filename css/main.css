@@ -190,9 +190,9 @@ header li a {
     color: black;
 }
 header {
-    text-align: center;
-    background: white;
-    background-size: cover;
+    text-align: right;
+    background: url(../img/header-bg-texture.jpeg);
+    background-size: contain;
     padding: 10rem 1.5rem 3rem;
     border-bottom: .2em solid #cbbca9;
 }
@@ -256,6 +256,10 @@ footer li a:hover {
     box-sizing: border-box;
     box-shadow: 0 0 10px rgba(0,0,0,.1);
     border-radius: 4px;
+}
+.logistics p {
+    box-sizing: border-box;
+    border-style: 0 solid;
 }
 
 .hero {
@@ -337,9 +341,11 @@ footer li a:hover {
 .breadcrumbs li {
     display:  inline-block;
     color: #bdbdbd;
+    text-decoration: none;
 }
 .breadcrumbs li a {
     color:  #a29f98;
+    text-decoration: none;
 }
 
 .main-content,
@@ -349,8 +355,61 @@ footer li a:hover {
 
 .main-content img,
 .side-content img {
-    width:  100%;
+    width:  auto;
 }
+
+.slider img {
+    box-sizing: border-box;
+    border-style: 4px solid #ffffff;
+    border-radius: 4px;
+    width: auto;
+}
+
+@media screen and (min-width: 40em) {
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 40em) {
+    body {
+        font-size:  1rem;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    body {
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+@media screen and (min-width: 40em) {
+    .logo {
+        float: left;
+        height: 5rem;
+    }
+    header ul {
+        float: right;
+    }
+    header li {
+        line-height: 5rem;
+    }
+    header {
+        overflow: hidden;
+    }
+}
+
  /* ==========================================================================
    Helper classes
    ========================================================================== */
